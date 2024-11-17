@@ -6,7 +6,7 @@ Token = "YOUR DISCORD BOT TOKEN"  # Defines your bot token (REPLACE "YOUR DISCOR
 
 @client.event                               
 async def on_ready():                       # Prints a message when the file was succesfully loaded
-  print(f"I'm ready as: {client.user}")
+    print(f"Logged in as {client.user} (ID: {client.user.id})")
   
   
 @client.run(Token)   # Runs your bot
